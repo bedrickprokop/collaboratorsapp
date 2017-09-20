@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CollaboratorsApp</string>
+    <string name="activity_title_collaborators">Collaborators</string>
+    <string name="activity_title_addcollaborator">New Collaborator</string>
+    <string name="et_maintaincollaborator_name_required">Name is required</string>
+    <string name="et_maintaincollaborator_login_required">Login is required</string>
+    <string name="tv_addcollaborator_name">Name</string>
+    <string name="tv_addcollaborator_login">Login</string>
+    <string name="tv_addcollaborator_profile">Profile</string>
+    <string name="et_maintaincollaborator_password_required">Password is required</string>
+    <string name="tv_addcollaborator_password">Password</string>
+    <string name="activity_title_collaboratordetail">Collaborator Detail</string>
+    <string name="notprovided_message">Not provided</string>
+    <string name="activity_title_editcollaborator">Edit Collaborator</string>
+    <string name="createcollaborator_actionmessage"><![CDATA[Collaborator %1$s created successfully]]></string>
+    <string name="editcollaborator_actionmessage"><![CDATA[Collaborator %1$s edited successfully]]></string>
+    <string name="nocollaborators_message">There are no collaborators /:</string>
+</resources>
