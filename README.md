@@ -21,3 +21,5 @@ Android application that consumes and produces data from/for CollaboratorsAPI
 - Run the server application mentioned on requirements
 
 - Run the android application
+
+- Enjoy XD
