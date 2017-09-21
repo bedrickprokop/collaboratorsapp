@@ -1,6 +1,5 @@
 package br.com.collaboratorsapp.data.service.impl;
 
-import java.io.Console;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +24,10 @@ public class CollaboratorServiceApiImplRetrofit implements CollaboratorServiceAp
             @Override
             public void onResponse(Call<List<Collaborator>> call, Response<List<Collaborator>> response) {
                 List<Collaborator> body = response.body();
+
+                //TODO fazer tratamento de erros do servidor - analisar statusCode, body e errorBody
+                //TODO criar uma entidade generica para tratamento de responses
+
                 if (null != body) {
                     callback.onLoaded(body);
                 } else {
@@ -34,7 +37,7 @@ public class CollaboratorServiceApiImplRetrofit implements CollaboratorServiceAp
 
             @Override
             public void onFailure(Call<List<Collaborator>> call, Throwable t) {
-                //TODO
+                //TODO callback de falhas do aparato em chamar o serviço - como erro de conexão
             }
         });
     }
@@ -47,12 +50,16 @@ public class CollaboratorServiceApiImplRetrofit implements CollaboratorServiceAp
         call.enqueue(new Callback<Collaborator>() {
             @Override
             public void onResponse(Call<Collaborator> call, Response<Collaborator> response) {
+
+                //TODO fazer tratamento de erros do servidor - analisar statusCode, body e errorBody
+                //TODO criar uma entidade generica para tratamento de responses
+
                 callback.onLoaded(response.body());
             }
 
             @Override
             public void onFailure(Call<Collaborator> call, Throwable t) {
-                //TODO
+                //TODO callback de falhas do aparato em chamar o serviço - como erro de conexão
             }
         });
     }
@@ -65,12 +72,17 @@ public class CollaboratorServiceApiImplRetrofit implements CollaboratorServiceAp
         call.enqueue(new Callback<Collaborator>() {
             @Override
             public void onResponse(Call<Collaborator> call, Response<Collaborator> response) {
+
+                //TODO fazer tratamento de erros do servidor - analisar statusCode, body e errorBody
+                //TODO criar uma entidade generica para tratamento de responses
+                //if (response.isSuccessful()) {
+
                 callback.onLoaded(response.body());
             }
 
             @Override
             public void onFailure(Call<Collaborator> call, Throwable t) {
-                String teste = "teste";
+                //TODO callback de falhas do aparato em chamar o serviço - como erro de conexão
             }
         });
     }
@@ -83,12 +95,15 @@ public class CollaboratorServiceApiImplRetrofit implements CollaboratorServiceAp
         call.enqueue(new Callback<Collaborator>() {
             @Override
             public void onResponse(Call<Collaborator> call, Response<Collaborator> response) {
+                //TODO fazer tratamento de erros do servidor - analisar statusCode, body e errorBody
+                //TODO criar uma entidade generica para tratamento de responses
+
                 callback.onLoaded(response.body());
             }
 
             @Override
             public void onFailure(Call<Collaborator> call, Throwable t) {
-
+                //TODO callback de falhas do aparato em chamar o serviço - como erro de conexão
             }
         });
     }
@@ -101,11 +116,15 @@ public class CollaboratorServiceApiImplRetrofit implements CollaboratorServiceAp
         call.enqueue(new Callback<Collaborator>() {
             @Override
             public void onResponse(Call<Collaborator> call, Response<Collaborator> response) {
+                //TODO fazer tratamento de erros do servidor - analisar statusCode, body e errorBody
+                //TODO criar uma entidade generica para tratamento de responses
+
                 callback.onLoaded(response.body());
             }
 
             @Override
             public void onFailure(Call<Collaborator> call, Throwable t) {
+                //TODO callback de falhas do aparato em chamar o serviço - como erro de conexão
             }
         });
     }
