@@ -13,6 +13,9 @@ import retrofit2.Response;
 
 public class CollaboratorServiceApiImplRetrofit implements CollaboratorServiceApi {
 
+    //SERVER    - http://www.codingpedia.org/ama/error-handling-in-rest-api-with-jersey/
+    //ANDROID   - https://futurestud.io/tutorials/retrofit-2-simple-error-handling
+
     @Override
     public void findAll(final CollaboratorCallback<List<Collaborator>> callback) {
 
