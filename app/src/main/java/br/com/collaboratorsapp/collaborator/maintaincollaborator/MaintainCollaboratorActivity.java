@@ -112,8 +112,8 @@ public class MaintainCollaboratorActivity extends AppCompatActivity implements M
 
         //Password
         etMaintainCollaboratorPassword = (EditText) findViewById(R.id.et_maintaincollaborator_password);
-        etMaintainCollaboratorPassword.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD
-                | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
+        etMaintainCollaboratorPassword.setInputType(InputType.TYPE_CLASS_TEXT |
+                InputType.TYPE_TEXT_VARIATION_PASSWORD);
         etMaintainCollaboratorPassword.setOnFocusChangeListener(
                 new FocusListener(R.id.et_maintaincollaborator_password));
 
